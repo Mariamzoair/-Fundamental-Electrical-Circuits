@@ -1,0 +1,215 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNE+2Pj2X9x9CYeIip1rhEO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mariamzoair/-Fundamental-Electrical-Circuits/blob/main/%20Week%201%20homework%20solutions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ask the user for a word\n",
+        "word = input(\"Enter a word: \")\n",
+        "\n",
+        "# Define vowels\n",
+        "vowels = \"aeiouAEIOU\"\n",
+        "\n",
+        "# Count how many vowels are in the word\n",
+        "count = 0\n",
+        "for letter in word:\n",
+        "    if letter in vowels:\n",
+        "        count += 1\n",
+        "\n",
+        "# Print the result\n",
+        "print(\"Number of vowels:\", count)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7A3K8gLMoTv1",
+        "outputId": "3a014702-bd20-4cbe-e3ab-ad6816c4c99a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a word: elephant\n",
+            "Number of vowels: 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# List of animals\n",
+        "animals = ['tiger', 'elephant', 'monkey', 'zebra', 'panther']\n",
+        "\n",
+        "# Loop through each animal and print it in uppercase\n",
+        "for animal in animals:\n",
+        "    print(animal.upper())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tZUhXteDo5r7",
+        "outputId": "e346bd76-2b81-4b33-c12b-220c5a071a74"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "TIGER\n",
+            "ELEPHANT\n",
+            "MONKEY\n",
+            "ZEBRA\n",
+            "PANTHER\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Loop through numbers from 1 to 20\n",
+        "for num in range(1, 21):\n",
+        "    if num % 2 == 0:\n",
+        "        print(num, \"is even\")\n",
+        "    else:\n",
+        "        print(num, \"is odd\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JS-CbtmRpLGp",
+        "outputId": "70e11b3b-c4f4-4e2d-9037-8f39f0bbaf33"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 is odd\n",
+            "2 is even\n",
+            "3 is odd\n",
+            "4 is even\n",
+            "5 is odd\n",
+            "6 is even\n",
+            "7 is odd\n",
+            "8 is even\n",
+            "9 is odd\n",
+            "10 is even\n",
+            "11 is odd\n",
+            "12 is even\n",
+            "13 is odd\n",
+            "14 is even\n",
+            "15 is odd\n",
+            "16 is even\n",
+            "17 is odd\n",
+            "18 is even\n",
+            "19 is odd\n",
+            "20 is even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ask the user for a word or phrase\n",
+        "text = input(\"Enter a word: \")\n",
+        "\n",
+        "# Remove spaces and make it lowercase for fair comparison\n",
+        "text = text.replace(\" \", \"\").lower()\n",
+        "\n",
+        "# Check if the text is the same when reversed\n",
+        "if text == text[::-1]:\n",
+        "    print(\"It's a palindrome!\")\n",
+        "else:\n",
+        "    print(\"It's not a palindrome.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZeF1-9ospZQj",
+        "outputId": "ca53b1b0-ecd9-47db-a3b8-255cb04e71b2"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a word: madam\n",
+            "It's a palindrome!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Define a function that adds two integers\n",
+        "def sum_of_integers(a, b):\n",
+        "    return a + b\n",
+        "\n",
+        "# Ask the user for two numbers\n",
+        "a = int(input(\"Enter the first integer: \"))\n",
+        "b = int(input(\"Enter the second integer: \"))\n",
+        "\n",
+        "# Call the function and print the result\n",
+        "result = sum_of_integers(a, b)\n",
+        "print(\"The sum is:\", result)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3YlRZy6JpuaK",
+        "outputId": "cfc5d5f6-e2d5-4773-880b-f59d46549861"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first integer: 5\n",
+            "Enter the second integer: 7\n",
+            "The sum is: 12\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
